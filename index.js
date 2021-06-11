@@ -37,9 +37,9 @@ function amaze() {
 
     actionEl.innerHTML = `export const ${str} = (payload) => ({ type: actionType.${constants[0]}, payload });`
 
-    dispatchEl.innerHTML = `${dispatch} : ${str};
+    dispatchEl.innerHTML = `${dispatch}: ${str},
                             <br/><br/>
-                            ${dispatch} : Proptypes.func.isRequired,`
+                            ${dispatch}: PropTypes.func.isRequired,`
 
     reducer.innerHTML =  actionTypes.map(a=> 
                            `case ${a}: <br/>
