@@ -10,7 +10,7 @@ div.style.display = 'none'
 
 const lazyInput = document.querySelector("#lazy");
 const lazyOutput = document.querySelected('#load');
-funtion lazy() {
+function lazy() {
   const str = lazyInput.value
   const ele = str.split(" ");
   
