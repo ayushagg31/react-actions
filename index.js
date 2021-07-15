@@ -8,7 +8,7 @@ const div = document.querySelector('#content')
 div.style.display = 'none'
 
 const lazyInput = document.querySelector("#lazy");
-const lazyOutput = document.querySelected('#load');
+const lazyOutput = document.querySelector('#load');
 function lazy() {
   const str = lazyInput.value
   const ele = str.split(" ");
