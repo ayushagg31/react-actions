@@ -8,6 +8,19 @@ const reducerEl = document.querySelector('#reducer')
 const div = document.querySelector('#content')
 div.style.display = 'none'
 
+const lazyInput = document.querySelector("#lazy");
+const lazyOutput = document.querySelected('#load');
+funtion lazy() {
+  const str = lazyInput.value
+  const ele = str.split(" ");
+  
+  const resp = `const ${ele[1]} = lazy(() => import(${ele[3]}))`);
+  lazyOutput.innerHTML = resp;
+
+}
+
+
+
 function amaze() {
 
     const str = input.value // getServiceTemplates
