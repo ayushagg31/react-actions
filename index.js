@@ -14,7 +14,7 @@ function lazy() {
   const str = lazyInput.value
   const ele = str.split(" ");
   
-  const resp = `const ${ele[1]} = lazy(() => import(${ele[3]}))`);
+  const resp = `const ${ele[1]} = lazy(() => import(${ele[3]}))`;
   lazyOutput.innerHTML = resp;
 
 }
